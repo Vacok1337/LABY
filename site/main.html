@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="main.css">
+<title>Владислав Янчарский</title>
+</head>
+
+<body background="media/bg.jpg" repeat="none">
+
+<h1 align="center">Сайт-Визитка Владислава Янчарского</h1>
+<p>
+Меня зовут Влад. Мне 18 лет. Я родился и живу в городе Гродно!<br>
+На данный момент я учусь в <b>ГГПК</b>!
+</p>
+
+<div id="nav"><h2 align="center">Навигация</h2><br>
+<a href="#uvl">Увлечения </a>  ----------    <a href="#photo">Фото</a>  ----------   <a href="#music">Музыка</a>  ----------  <a href="#table">Таблица</a> ----------  <a href="#container">Авторизация</a>
+</div>
+
+
+<hr>
+<div id="uvl">
+<h2 align="center">Мои увлечения!</h2>
+<ul>
+<li>Програмирование</li>
+<li>Спорт</li>
+<li>Западная музыка</li>
+</ul>
+</div>
+
+<hr>
+<div align="center" id="photo">
+<h2>Моя фотография</h2>
+<img src="media/denis.jpg" width="300px" height="350px">
+</div>
+
+<hr>
+<div id="music">
+<h2 align="center">Музыка</h2>
+<h3>50Cent - Police</h3>
+ <audio controls src="media/1.mp3"></audio>
+ </div>
+
+<hr>
+<h2 align="center">Таблица</a>
+<div id="table">
+<table>
+<tr><th>Места обучения</th><th>Дата обучения</th></tr> <!--ряд с ячейками заголовков-->
+<tr><td>Гимназия №2</td><td>2011-2020</td></tr>
+<tr><td>СШ №7</td><td>2020-2021</td></tr> <!--ряд с ячейками тела таблицы-->
+</table>
+</div>
+<hr>
+
+<h2 align="center">Авторизация</h2>
+
+<form action="action_page.php">
+
+
+  <div class="container">
+    <label for="uname"><b>Логин</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Пароль</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Войти</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+    </label>
+  </div>
+
+  
+</form>
+
+
+
+
+</div><a href="#nav">К НАВИГАЦИИ</a><div>
+</body>
+
+</html>

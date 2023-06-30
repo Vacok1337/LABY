@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head></head>
+<body>
+	<p>Владислав Янчарский</p>
+	<img src="img.jpg" style="width: 500px; height:500px;"> <br/>
+	<script>
+					function getAllImages() {
+			  setTimeout(() => {
+				const images = document.getElementsByTagName('img');
+				for (let i = 0; i < images.length; i++) {
+				  console.log("Изображение " + (i+1) + ":" + images[i].src);
+				}
+			  }, 5000);
+			}
+
+			getAllImages();
+	</script>
+	<script>
+			const link = document.createElement('a');  // Создаем новый элемент 'a', который будет являться ссылкой
+		link.href = 'https://vk.com';  // Задаем ему атрибут 'href' со значением 'https://vk.com'
+		link.textContent = 'VK';  // Задаем ему текст содержащийся внутри элемента (в данном случае, это будет текст 'VK')
+
+		document.body.appendChild(link);  // Вставляем элемент в конец 'body' документа
+	</script>
+	
+	<br/>
+	<button id="btn-resize">Сменить стиль</button>
+	<script src="scripts.js"></script>
+	<script><button onclick="showOS()">Показать информацию об ОС</button>
+
+<button onclick="showOS()">Показать информацию об ОС</button>
+
+<script>
+  function showOS() {
+    const os = navigator.platform;  // Получаем информацию об операционной системе
+    const windowFeatures = 'width=300,height=300';  // Устанавливаем размеры окна
+
+    const win = window.open('', '', windowFeatures);  // Открываем пустое окно
+
+    win.document.write(`<p>Ваша операционная система: ${os}</p>`);  // Добавляем информацию в окно
+
+    setTimeout(() => {
+      win.close();  // Закрываем окно через 5 секунд
+    }, 5000);
+  }
+</script>
+</body>
+</html>
